@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de torques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Torques</h2>
+        <p>Ingrese la cantidad de sistemas fuerza-distancia <b>n</b> para comenzar:</p>
+        <input type="number" id="amount" placeholder="Ej. 2" min="1">
+        <button id="send_amount">Generar campos de vectores</button>
+        <div id="inputs_container" style="margin-top: 20px;"></div>
+        <button id="calculate" style="display: none; margin-top: 15px;">Calcular y Graficar</button>
+        <canvas id="vectorCanvas" width="450" height="450" style="display: none;"></canvas>
+        <div id="results" class="result-box" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
